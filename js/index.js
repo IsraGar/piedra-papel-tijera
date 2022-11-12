@@ -1,3 +1,4 @@
+const divInstructions = document.querySelector(".instructions");
 const btnRock = document.querySelector(".rock");
 const btnPaper = document.querySelector(".paper");
 const btnScissors = document.querySelector(".scissors");
@@ -18,6 +19,7 @@ function aleatorio(min, max) {
 }
 
 function getValor() {
+  divInstructions.classList.add('inactive');
   pc = aleatorio(1, 3);
   jugador = this.value;
   const pCont = document.createElement("p");
@@ -83,7 +85,7 @@ function reset(){
   divHistory.innerText = '';
   divResult.innerText = '';
   divResult.classList.add('inactive');
-
+  divInstructions.classList.remove('inactive');
 }
 
 function eleccion(opt) {

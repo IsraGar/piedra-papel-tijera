@@ -22,7 +22,11 @@ h1 {
 h2 {
   text-align: center;
   color: var(--blue-sm);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+.instructions p{
+  color: var(--blue-sm);
+  font-size: 12px;
 }
 .container {
   width: 100%;
